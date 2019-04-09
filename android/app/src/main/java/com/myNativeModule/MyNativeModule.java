@@ -7,6 +7,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
+
 public class MyNativeModule extends ReactContextBaseJavaModule {
     private Context mContext;
 
@@ -24,6 +25,7 @@ public class MyNativeModule extends ReactContextBaseJavaModule {
     // 函数不能有返回值，因为被调用的原生代码是异步的，原生代码执行结束后只能通过回调函数或者发送消息给RN
     @ReactMethod
     public void rnCallNative(String msg) {
-        Toast.makeText(mContext, msg, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mContext, msg, Toast.LENGTH_SHORT).show();
+        new TextModule().getTime(mContext);
     }
 }

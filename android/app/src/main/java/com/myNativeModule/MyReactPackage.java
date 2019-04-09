@@ -22,12 +22,6 @@ public class MyReactPackage implements ReactPackage {
         return modules;
     }
 
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-
-        //返回值需要修改
-        return Collections.emptyList();
-    }
-
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         // 返回值需要修改
         return Collections.emptyList();
