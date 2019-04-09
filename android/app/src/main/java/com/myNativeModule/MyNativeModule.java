@@ -1,4 +1,4 @@
-package com.nativetest;
+package com.myNativeModule;
 
 import android.content.Context;
 import android.widget.Toast;
